@@ -58,6 +58,10 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
         AppendMenu(hMenu, MF_POPUP, 2, L"Свернуть окно");
         SetMenu(hwnd, hMenu);
 
+        HMENU hMenu1 = CreateMenu();
+        AppendMenu(hMenu1, MF_POPUP, 3, L"Зачем я?");
+        SetMenu(hwnd, hMenu1);
+
             // Кнопка
 
         HWND hbtn = CreateWindow(
